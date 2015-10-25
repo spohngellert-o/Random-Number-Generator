@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href = "AnimationLearning.css"></link>
+		<script type = "text/javascript">
+		function adjust() {
+			console.log("here");
+			if(document.getElementById("bits").style.marginLeft === "23px") {
+				document.getElementById("bits").style.marginLeft = "0px";
+			}
+			else {
+				document.getElementById("bits").style.marginLeft = "23px";
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<form>
+			<input type="button" onClick = "adjust()" value = "Test">
+		</form>
+		<div class="container">
+		<div id = "numbers">
+			<div class = "numberDiv">0</div>
+			<div class = "numberDiv">1</div>
+			<div class = "numberDiv">2</div>
+			<div class = "numberDiv">3</div>
+			<div class = "numberDiv">4</div>
+			<div class = "numberDiv">5</div>
+			<div class = "numberDiv">6</div>
+			<div class = "numberDiv">7</div>
+		</div>
+		<div class = "bits" id = "bits">
+			<div class = "bit">1</div>
+			<div class = "bit">1</div>
+			<div class = "bit">0</div>
+			<div class = "bit">0</div>
+			<div class = "bit">1</div>
+			<div class = "bit">1</div>
+			<div class = "bit">0</div>
+			<div class = "bit">1</div>
+		</div>
+		<div style="flex:1" />
+	</div>
+	</body>
+</html>
